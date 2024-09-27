@@ -21,7 +21,7 @@ jobs:
         directory: code/
         #soft_fail: true
         api-key: ${{ secrets.BC_API_KEY }}
-      #env:
+      env:
         PRISMA_API_URL: https://api0.prismacloud.io
         
     - name: Upload SARIF file
