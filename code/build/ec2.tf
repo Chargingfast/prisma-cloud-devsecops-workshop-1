@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_ec2_host" "test" {
-  instance_type     = "t3.micro"
+  instance_type     = "t3.small"
   availability_zone = "us-west-2a"
 
   provisioner "local-exec" {
@@ -11,11 +11,11 @@ resource "aws_ec2_host" "test" {
   }
 
   tags = {
-    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
-    git_file             = "code/simple_ec2.tf"
-    git_last_modified_at = "2024-01-26 23:01:56"
-    git_last_modified_by = "tprendervill@paloaltonetworks.com"
-    git_modifiers        = "tprendervill"
+    git_commit           = "741eb14d4374146a7fd17c44f0cf40a8bf44739c"
+    git_file             = "code/build/ec2.tf"
+    git_last_modified_at = "2024-10-09 11:29:23"
+    git_last_modified_by = "Chargingfast@gmail.com"
+    git_modifiers        = "Chargingfast"
     git_org              = "Chargingfast"
     git_repo             = "prisma-cloud-devsecops-workshop-1"
     yor_name             = "test"
