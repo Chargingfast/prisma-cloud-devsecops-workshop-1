@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_ec2_host" "test" {
-  instance_type     = "t3.micro"
+  instance_type     = "t3.small"
   availability_zone = "us-west-2a"
 
   provisioner "local-exec" {
